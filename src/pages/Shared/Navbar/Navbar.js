@@ -11,9 +11,6 @@ const Navbar = () => {
         <NavLink to={"/home"}>Home</NavLink>
       </li>
       <li>
-        <NavLink to={"/projects"}>Projects</NavLink>
-      </li>
-      <li>
         <NavLink to={"/contact"}>Contact</NavLink>
       </li>
     </>
@@ -47,7 +44,7 @@ const Navbar = () => {
               {menuItems}
             </ul>
           </div>
-          <a href="iu" className="btn btn-ghost normal-case text-xl">
+          <a href="/home" className=" normal-case text-xl">
             ShahadatTheDev
           </a>
         </div>

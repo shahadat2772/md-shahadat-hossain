@@ -5,14 +5,13 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./pages/Shared/Navbar/Navbar";
 import ProjectDetailModal from "./pages/Home/Projects/ProjectDetailModal";
 import ContactMe from "./pages/ContactMe/ContactMe";
+import { Toaster } from "react-hot-toast";
 
 export const projectProDetailContext = createContext("projectDetailState");
 
 function App() {
   // Modal opener state
   const [ProjectProDetail, setProjectForDetail] = useState(null);
-
-  console.log(ProjectProDetail);
 
   return (
     <div className="max-w-7xl mx-auto">
@@ -34,6 +33,7 @@ function App() {
           ProjectProDetail={ProjectProDetail}
         ></ProjectDetailModal>
       )}
+      <Toaster></Toaster>
     </div>
   );
 }

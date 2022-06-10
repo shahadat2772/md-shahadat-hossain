@@ -19,22 +19,22 @@ const ProjectDetailModal = ({ ProjectProDetail }) => {
       {/* <!-- The button to open modal --> */}
 
       {/* <!-- Put this part before </body> tag --> */}
-      <input type="checkbox" id="projectDetailModal" class="modal-toggle" />
-      <label for="projectDetailModal" class="modal cursor-pointer">
-        <label class="modal-box relative w-11/12 max-w-5xl" for="">
+      <input type="checkbox" id="projectDetailModal" className="modal-toggle" />
+      <label htmlFor="projectDetailModal" className="modal cursor-pointer">
+        <label className="modal-box relative w-11/12 max-w-5xl" htmlFor="">
           <label
-            for="projectDetailModal"
-            class="btn btn-sm btn-circle absolute right-2 top-2"
+            htmlFor="projectDetailModal"
+            className="btn btn-sm btn-circle absolute right-2 top-2"
           >
             ✕
           </label>
-          <h3 class="text-xl font-medium">More on {name}</h3>
+          <h3 className="text-xl font-medium">More on {name}</h3>
           {/* Brief */}
           <p>{brief}</p>
           {/* Bullet Points */}
-          <p class="pt-[10px] pb-1">
-            {bulletPoints.map((bp) => (
-              <li>{bp}</li>
+          <p className="pt-[10px] pb-1">
+            {bulletPoints.map((bp, index) => (
+              <li key={index}>{bp}</li>
             ))}
           </p>
           {/* Technologies */}
@@ -54,8 +54,8 @@ const ProjectDetailModal = ({ ProjectProDetail }) => {
           </p>
           {/* Images */}
           <div className="imagesContainer gap-7 grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 pt-4">
-            {images?.map((img) => (
-              <img src={img} alt="" />
+            {images?.map((img, index) => (
+              <img key={index} src={img} alt="" />
             ))}
           </div>
         </label>

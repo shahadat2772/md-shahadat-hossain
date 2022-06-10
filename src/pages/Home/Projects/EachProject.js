@@ -8,7 +8,6 @@ const EachProject = ({ project }) => {
     projectProDetailContext
   );
 
-  //   console.log(project);
   const {
     _id,
     name,

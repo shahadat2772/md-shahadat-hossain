@@ -1,16 +1,8 @@
 import React, { useContext } from "react";
 import { useQuery } from "react-query";
 import EachProject from "./EachProject";
-// import { projectProDetailContext } from "../../../App";
 
 const Projects = () => {
-  // Using context for project detail
-  // const [ProjectProDetail, setProjectForDetail] = useContext(
-  //   projectProDetailContext
-  // );
-
-  // console.log([ProjectProDetail, setProjectForDetail]);
-
   const { data: projects, isLoading } = useQuery("projects", () =>
     fetch("projects.json").then((res) => res.json())
   );
