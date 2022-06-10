@@ -9,8 +9,8 @@
       "Admin role has extra power of adding & deleting products, orders, and role management."
     ],
     "images": [
-      "https://i.ibb.co/6YRcvwb/tooldo-3.jpg",
       "https://i.ibb.co/4894sK9/tooldo-6.jpg",
+      "https://i.ibb.co/6YRcvwb/tooldo-3.jpg",
       "https://i.ibb.co/hFcCdYZ/tooldo-7.jpg"
     ],
     "technologies": "React, Express, MongoDB, Firebase Authentication, JsonWebToken, Stripe, React Router, React Query, Tailwind, Daisy UI, etc.",

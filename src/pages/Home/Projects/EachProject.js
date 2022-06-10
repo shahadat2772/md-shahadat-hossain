@@ -1,20 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import { projectProDetailContext } from "../../../App";
 
 const EachProject = ({ project }) => {
+  // Using context for project detail
+  const [ProjectProDetail, setProjectForDetail] = useContext(
+    projectProDetailContext
+  );
+
   //   console.log(project);
   const {
     _id,
     name,
     brief,
-    bulletPoints,
     images,
+    bulletPoints,
     technologies,
     live,
     clientRepo,
     serverRepo,
   } = project;
-
-  console.log(project);
 
   return (
     <div className="card rounded card-compact w-80 bg-base-100 shadow-2xl">
@@ -25,7 +30,13 @@ const EachProject = ({ project }) => {
         <h2 className="card-title">{name}</h2>
         <p>{brief}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary btn-outline">Details</button>
+          <label
+            htmlFor="projectDetailModal"
+            onClick={() => setProjectForDetail(project)}
+            className="btn btn-primary btn-outline"
+          >
+            Details
+          </label>
         </div>
       </div>
     </div>

@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useQuery } from "react-query";
 import EachProject from "./EachProject";
+// import { projectProDetailContext } from "../../../App";
 
 const Projects = () => {
+  // Using context for project detail
+  // const [ProjectProDetail, setProjectForDetail] = useContext(
+  //   projectProDetailContext
+  // );
+
+  // console.log([ProjectProDetail, setProjectForDetail]);
+
   const { data: projects, isLoading } = useQuery("projects", () =>
     fetch("projects.json").then((res) => res.json())
   );
@@ -18,7 +26,7 @@ const Projects = () => {
         <div className="projects gap-x-12 justify-items-center mt-10 grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1">
           {/* Each Projects */}
           {projects.map((project) => (
-            <EachProject project={project}></EachProject>
+            <EachProject key={project._id} project={project}></EachProject>
           ))}
         </div>
       </div>
