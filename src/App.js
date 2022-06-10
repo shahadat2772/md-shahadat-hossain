@@ -6,6 +6,7 @@ import Navbar from "./pages/Shared/Navbar/Navbar";
 import ProjectDetailModal from "./pages/Home/Projects/ProjectDetailModal";
 import ContactMe from "./pages/ContactMe/ContactMe";
 import { Toaster } from "react-hot-toast";
+import AboutMe from "./pages/AboutMe/AboutMe";
 
 export const projectProDetailContext = createContext("projectDetailState");
 
@@ -22,8 +23,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/home" element={<Home></Home>}></Route>
-          {/* <Route path="/projects" element={<Projects></Projects>}></Route> */}
           <Route path="/contact" element={<ContactMe></ContactMe>}></Route>
+          <Route path="/about" element={<AboutMe></AboutMe>}></Route>
         </Routes>
       </projectProDetailContext.Provider>
 
