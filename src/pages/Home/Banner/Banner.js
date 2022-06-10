@@ -14,12 +14,9 @@ const Banner = () => {
             Hello, <br /> I'm Shahadat, <br />
             Web Developer.
           </h1>
-          <Link
-            to={"/projects"}
-            className="btn btn-primary btn-outline mt-8 ml-1"
-          >
+          <a href="#projects" className="btn btn-primary btn-outline mt-8 ml-1">
             Projects
-          </Link>
+          </a>
           <button className="btn btn-primary btn-outline ml-2">
             <a href="https://drive.google.com/u/0/uc?id=1RpnuRcI_0fjmTDayBN2-wxEeQbaQoEVZ&export=download">
               Resume <FontAwesomeIcon icon={faDownload} />
