@@ -1,0 +1,59 @@
+[
+  {
+    "_id": 1,
+    "name": "Tooldo",
+    "brief": "Tools manufacturer full-stack website.",
+    "bulletPoints": [
+      "Interactive & functional dashboard panel.",
+      "Managed API for both admin and general user with JsonWebToken.",
+      "Admin role has extra power of adding & deleting products, orders, and role management."
+    ],
+    "images": [
+      "https://i.ibb.co/6YRcvwb/tooldo-3.jpg",
+      "https://i.ibb.co/4894sK9/tooldo-6.jpg",
+      "https://i.ibb.co/hFcCdYZ/tooldo-7.jpg"
+    ],
+    "technologies": "React, Express, MongoDB, Firebase Authentication, JsonWebToken, Stripe, React Router, React Query, Tailwind, Daisy UI, etc.",
+    "live": "https://tooldo-658e2.web.app",
+    "clientRepo": "https://github.com/shahadat2772/tooldo-client",
+    "serverRepo": "https://github.com/shahadat2772/tooldo-server"
+  },
+  {
+    "_id": 2,
+    "name": "Speedo",
+    "brief": "Car stock manager website.",
+    "bulletPoints": [
+      "Consistent in look and feel, interactive, and mobile responsive.",
+      "Adding and managing stocks in speedo is snappy.",
+      "Find the latest added products in the New Arrival section."
+    ],
+    "images": [
+      "https://i.ibb.co/xFp130X/speedo-2.jpg",
+      "https://i.ibb.co/XS7Yn12/speedo-4.jpg",
+      "https://i.ibb.co/ypNM2gH/speedo-5.jpg"
+    ],
+    "technologies": "React, Express, MongoDB, Firebase Authentication, JsonWebToken, React Router, Axios, React Bootstrap, etc.",
+    "live": "https://speedo-eb970.web.app/",
+    "clientRepo": "https://github.com/shahadat2772/speedo-client",
+    "serverRepo": "https://github.com/shahadat2772/speedo-server"
+  },
+  {
+    "_id": 3,
+    "name": "DentAid",
+    "brief": "Dental service provider website with firebase authentication",
+    "bulletPoints": [
+      "Users are able to book an appointment.",
+      "Addressed user authentication with firebase.",
+      "Handled errors related to authentication, authorization, etc."
+    ],
+    "images": [
+      "https://i.ibb.co/fHnjLht/dent-Aid-3.jpg",
+      "https://i.ibb.co/2jnzqNS/dent-Aid-2.jpg",
+      "https://i.ibb.co/JqHyxkf/dent-Aid-4.jpg"
+    ],
+    "technologies": "React, Express, MongoDB, Firebase Authentication, React Router, React Bootstrap.",
+    "live": "https://dentaid-bc9ec.web.app/",
+    "clientRepo": "https://github.com/shahadat2772/dent-aid",
+    "serverRepo": "https://github.com/shahadat2772/dent-aid-server"
+  }
+]
