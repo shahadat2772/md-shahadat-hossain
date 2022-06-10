@@ -29,7 +29,7 @@ const ContactMe = () => {
   };
 
   return (
-    <section className="h-[90vh] flex justify-center items-center">
+    <section className="h-[90vh] flex justify-center items-center pt-[70px]">
       <form
         ref={form}
         className="md:min-w-[480px] min-w-[330px]"

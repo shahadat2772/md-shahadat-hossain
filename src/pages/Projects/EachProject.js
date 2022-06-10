@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 
-import { projectProDetailContext } from "../../../App";
+import { projectProDetailContext } from "../../App";
 
 const EachProject = ({ project }) => {
   // Using context for project detail
