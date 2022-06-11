@@ -12,12 +12,15 @@ import ProjectDetailModal from "./pages/Projects/ProjectDetailModal";
 import Blogs from "./pages/Blogs/Blogs";
 import FullPageScroll from "./FullPageScroll";
 import Banner from "./pages/Home/Banner/Banner";
+import HireMeModal from "./pages/AboutMe/HireMeModal";
 
 export const projectProDetailContext = createContext("projectDetailState");
+export const hireMeInfoContext = createContext("hireMeInfoContext");
 
 function App() {
   // Modal opener state
   const [ProjectProDetail, setProjectForDetail] = useState(null);
+  const [hireMeInfo, setHireMeInfo] = useState(null);
 
   return (
     <div className="max-w-7xl mx-auto">
@@ -25,8 +28,9 @@ function App() {
       <projectProDetailContext.Provider
         value={[ProjectProDetail, setProjectForDetail]}
       >
-        {/* Trying react full page */}
-        {/* <Routes>
+        <hireMeInfoContext.Provider value={[hireMeInfo, setHireMeInfo]}>
+          {/* Trying react full page */}
+          {/* <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/home" element={<Home></Home>}></Route>
           <Route path="/contact" element={<ContactMe></ContactMe>}></Route>
@@ -34,15 +38,16 @@ function App() {
           <Route path="/projects" element={<Projects></Projects>}></Route>
           <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         </Routes> */}
-        <FullPageScroll></FullPageScroll>
+          <FullPageScroll></FullPageScroll>
 
-        {/* <div className="container">
+          {/* <div className="container">
           <Banner></Banner>
           <Projects></Projects>
           <AboutMe></AboutMe>
           <ContactMe></ContactMe>
           <Blogs></Blogs>
         </div> */}
+        </hireMeInfoContext.Provider>
       </projectProDetailContext.Provider>
 
       {/* Projects detail modal */}
@@ -51,6 +56,7 @@ function App() {
           ProjectProDetail={ProjectProDetail}
         ></ProjectDetailModal>
       )}
+      {hireMeInfo && <HireMeModal hireMeInfo={hireMeInfo}></HireMeModal>}
       <Toaster></Toaster>
     </div>
   );
