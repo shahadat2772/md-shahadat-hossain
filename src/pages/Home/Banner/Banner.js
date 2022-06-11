@@ -6,7 +6,7 @@ import laptop from "../../../assets/images/laptop44.png";
 
 const Banner = () => {
   return (
-    <div className="hero min-h-screen ">
+    <div id="home" className="section hero min-h-screen">
       <div className="hero-content  md:gap-6 flex-col lg:flex-row-reverse">
         <img alt="" src={laptop} className="md:max-w-[470px]" />
         <div className="max-w-xl">
@@ -14,15 +14,16 @@ const Banner = () => {
             Hello, <br /> I'm Shahadat, <br />
             Web Developer.
           </h1>
-          <Link
+          {/* <div
+            aria-label="Slide 2"
             to={"/projects"}
             className="btn btn-primary btn-outline mt-8 ml-1"
           >
             Projects
-          </Link>
-          <button className="btn btn-primary btn-outline ml-2">
+          </div> */}
+          <button className="btn btn-primary btn-outline  mt-8 ml-1">
             <a href="https://drive.google.com/u/0/uc?id=1RpnuRcI_0fjmTDayBN2-wxEeQbaQoEVZ&export=download">
-              Resume <FontAwesomeIcon icon={faDownload} />
+              Download Resume <FontAwesomeIcon icon={faDownload} />
             </a>
           </button>
         </div>

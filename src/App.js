@@ -11,6 +11,7 @@ import Projects from "./pages/Projects/Projects";
 import ProjectDetailModal from "./pages/Projects/ProjectDetailModal";
 import Blogs from "./pages/Blogs/Blogs";
 import FullPageScroll from "./FullPageScroll";
+import Banner from "./pages/Home/Banner/Banner";
 
 export const projectProDetailContext = createContext("projectDetailState");
 
@@ -25,7 +26,6 @@ function App() {
         value={[ProjectProDetail, setProjectForDetail]}
       >
         {/* Trying react full page */}
-
         {/* <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/home" element={<Home></Home>}></Route>
@@ -35,6 +35,14 @@ function App() {
           <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         </Routes> */}
         <FullPageScroll></FullPageScroll>
+
+        {/* <div className="container">
+          <Banner></Banner>
+          <Projects></Projects>
+          <AboutMe></AboutMe>
+          <ContactMe></ContactMe>
+          <Blogs></Blogs>
+        </div> */}
       </projectProDetailContext.Provider>
 
       {/* Projects detail modal */}

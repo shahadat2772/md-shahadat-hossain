@@ -3,7 +3,7 @@ import about from "../../assets/images/about.png";
 
 const AboutMe = () => {
   return (
-    <div className="section hero min-h-screen pt-[70px]">
+    <div id="about" className="section about hero min-h-screen">
       <div className="hero-content flex-col gap-x-12 lg:flex-row">
         <img
           src={about}
