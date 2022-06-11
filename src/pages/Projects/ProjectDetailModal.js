@@ -28,11 +28,13 @@ const ProjectDetailModal = ({ ProjectProDetail }) => {
           >
             ✕
           </label>
-          <h3 className="text-xl font-medium">More on {name}</h3>
+          <h3 className="text-xl font-medium">
+            More on <span className="text-primary">{name}</span>
+          </h3>
           {/* Brief */}
           <p>{brief}</p>
           {/* Bullet Points */}
-          <p className="pt-[10px] pb-1">
+          <p className="py-[10px] ">
             {bulletPoints.map((bp, index) => (
               <li key={index}>{bp}</li>
             ))}
@@ -42,13 +44,13 @@ const ProjectDetailModal = ({ ProjectProDetail }) => {
           {/* Links */}
           <p className="pt-2">
             <FontAwesomeIcon className="text-[13px] px-2" icon={faLink} />
-            <a className="pr-4" href={live}>
+            <a className="pr-4 text-primary" href={live}>
               Live
             </a>
-            <a className="pr-4" href={clientRepo}>
+            <a className="pr-4 text-primary" href={clientRepo}>
               GitHub-Client
             </a>
-            <a className="pr-4" href={serverRepo}>
+            <a className="pr-4 text-primary" href={serverRepo}>
               GitHub-Client
             </a>
           </p>

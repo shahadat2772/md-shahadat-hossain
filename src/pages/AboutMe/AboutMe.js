@@ -11,7 +11,9 @@ const AboutMe = () => {
           alt=""
         />
         <div className="md:max-w-[450px] max-w-[330px]">
-          <h1 className="md:text-5xl text-4xl font-bold">I'm Shahadat!</h1>
+          <h1 className="md:text-5xl text-4xl font-bold">
+            <span className="text-primary">I'm</span> Shahadat!
+          </h1>
           <p className="pt-5 pb-0">
             I was always an enthusiast of technologies and curious about the new
             staff. I Finally started web development which I found super

@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 import laptop from "../../../assets/images/laptop44.png";
+import "./Banner.css";
 
 const Banner = () => {
   return (
@@ -10,8 +11,13 @@ const Banner = () => {
       <div className="hero-content  md:gap-6 flex-col lg:flex-row-reverse">
         <img alt="" src={laptop} className="md:max-w-[470px]" />
         <div className="max-w-xl">
-          <h1 className="md:text-[80px] text-[45px] md:leading-[78px] leading-[53px]">
-            Hello, <br /> I'm Shahadat, <br />
+          <h1 className="md:text-[80px] text-[45px] md:leading-[78px] leading-[53px] bannerTexts">
+            Hello,
+          </h1>
+          <h1 className="md:text-[80px] text-[45px] md:leading-[78px] leading-[53px] bannerTexts">
+            <span className="text-primary">I'm</span> Shahadat,
+          </h1>
+          <h1 className="md:text-[80px] text-[45px] md:leading-[78px] leading-[53px] bannerTexts">
             Web Developer.
           </h1>
           {/* <div

@@ -38,7 +38,7 @@ const ContactMe = () => {
         className="md:min-w-[480px] min-w-[330px]"
         onSubmit={handleSubmit(onSubmit)}
       >
-        <h2 className="text-xl ml-1 mb-2">Wanna send me a message?</h2>
+        <h2 className="text-2xl ml-1 mb-2">Wanna send me a message?</h2>
         {/* Name INPUT */}
         <div className="form-control">
           <input
