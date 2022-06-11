@@ -51,7 +51,7 @@ const ProjectDetailModal = ({ ProjectProDetail }) => {
               GitHub-Client
             </a>
             <a className="pr-4 text-primary" href={serverRepo}>
-              GitHub-Client
+              GitHub-Server
             </a>
           </p>
           {/* Images */}
