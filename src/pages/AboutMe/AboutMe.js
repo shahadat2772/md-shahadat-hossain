@@ -10,7 +10,7 @@ const AboutMe = () => {
       <div className="hero-content flex-col gap-x-12 lg:flex-row">
         <img
           src={about}
-          className="md:max-w-[320px] max-w-[200px] rounded-lg"
+          className="md:max-w-[280px] max-w-[200px] rounded-lg"
           alt=""
         />
         <div className="md:max-w-[450px] max-w-[330px]">

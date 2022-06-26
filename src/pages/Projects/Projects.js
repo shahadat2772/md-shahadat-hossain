@@ -12,7 +12,7 @@ const Projects = () => {
   }
 
   return (
-    <div className="h-screen overflow-y-auto hero projects" id="projects">
+    <div id="projects" className="section h-screen overflow-y-auto hero">
       <div className="projectsContainer max-w-max mx-auto mt-10 pb-14">
         <h2 className="text-3xl">
           <span className="text-primary">MY</span> PROJECTS

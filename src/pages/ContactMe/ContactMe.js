@@ -29,65 +29,67 @@ const ContactMe = () => {
   };
 
   return (
-    <section id="contact" className="">
-      <h2 className="md:text-3xl text-2xl pt-1 pl-1">
+    <section
+      id="contact"
+      className="section section h-[100vh] flex justify-center items-center"
+    >
+      {/* <h2 className="md:text-3xl text-2xl pt-1 pl-1">
         <span className="text-primary">CONTACT</span> ME
-      </h2>
-      <div className="section h-[85vh] flex justify-center items-center pt-[70px]">
-        <form
-          ref={form}
-          className="md:min-w-[480px] min-w-[330px]"
-          onSubmit={handleSubmit(onSubmit)}
-        >
-          {/* Name INPUT */}
-          <div className="form-control">
-            <input
-              required
-              {...register("name")}
-              type="text"
-              placeholder="*Your Name"
-              className="input input-bordered mb-2"
-              name="user_name"
-            />
-          </div>
-          {/* EMAIL INPUT */}
-          <div className="form-control">
-            <input
-              required
-              {...register("email")}
-              type="text"
-              placeholder="*Your Email"
-              className="input input-bordered mb-2"
-              name="user_email"
-            />
-          </div>
-          {/* Country INPUT */}
-          <div className="form-control">
-            <input
-              required
-              {...register("country")}
-              type="text"
-              placeholder="*Your country"
-              className="input input-bordered mb-2"
-              name="user_country"
-            />
-          </div>
-          {/* MESSAGE text */}
-          <div className="form-control">
-            <textarea
-              required
-              {...register("message")}
-              type="text"
-              placeholder="*Tell me how can i help you, i will contact you soon"
-              className="input input-bordered h-[90px] mb-2"
-              name="message"
-            />
-          </div>
-          <div className="mt-1">
-            <button className="btn btn-primary block ">Send Massage</button>
-          </div>
-        </form>
-      </div>
+      </h2> */}
+
+      <form
+        ref={form}
+        className="md:min-w-[460px] min-w-[330px]"
+        onSubmit={handleSubmit(onSubmit)}
+      >
+        {/* Name INPUT */}
+        <div className="form-control">
+          <input
+            required
+            {...register("name")}
+            type="text"
+            placeholder="*Your Name"
+            className="input input-bordered mb-2"
+            name="user_name"
+          />
+        </div>
+        {/* EMAIL INPUT */}
+        <div className="form-control">
+          <input
+            required
+            {...register("email")}
+            type="text"
+            placeholder="*Your Email"
+            className="input input-bordered mb-2"
+            name="user_email"
+          />
+        </div>
+        {/* Country INPUT */}
+        <div className="form-control">
+          <input
+            required
+            {...register("country")}
+            type="text"
+            placeholder="*Your country"
+            className="input input-bordered mb-2"
+            name="user_country"
+          />
+        </div>
+        {/* MESSAGE text */}
+        <div className="form-control">
+          <textarea
+            required
+            {...register("message")}
+            type="text"
+            placeholder="*Tell me how can i help you, i will contact you soon"
+            className="input input-bordered h-[90px] mb-2"
+            name="message"
+          />
+        </div>
+        <div className="mt-1">
+          <button className="btn btn-primary block ">Send Massage</button>
+        </div>
+      </form>
     </section>
   );
 };
