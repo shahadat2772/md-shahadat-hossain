@@ -1,9 +1,15 @@
 .scrollable {
   scroll-behavior: smooth;
   height: 100vh;
-  width: calc(100vw -120px);
+  width: 100vw;
   overflow-y: scroll;
 }
+
+/* @media screen and (max-width: 576px) {
+  .scrollable {
+    width: 100vw;
+  }
+} */
 
 .navIcon {
   border-radius: 7px;

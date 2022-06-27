@@ -1,21 +1,15 @@
 import React, { createContext, useState } from "react";
 import "./App.css";
 import Home from "./pages/Home/Home/Home";
-import { Route, Routes } from "react-router-dom";
-import Navbar from "./pages/Shared/Navbar/Navbar";
-import ReactFullpage from "@fullpage/react-fullpage";
 import ContactMe from "./pages/ContactMe/ContactMe";
 import { Toaster } from "react-hot-toast";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import Projects from "./pages/Projects/Projects";
 import ProjectDetailModal from "./pages/Projects/ProjectDetailModal";
 import Blogs from "./pages/Blogs/Blogs";
-import FullPageScroll from "./FullPageScroll";
-import Banner from "./pages/Home/Banner/Banner";
 import HireMeModal from "./pages/AboutMe/HireMeModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
-
 export const projectProDetailContext = createContext("projectDetailState");
 export const hireMeInfoContext = createContext("hireMeInfoContext");
 
@@ -23,6 +17,9 @@ function App() {
   // Modal opener state
   const [ProjectProDetail, setProjectForDetail] = useState(null);
   const [hireMeInfo, setHireMeInfo] = useState(null);
+
+  const toggler = document.getElementById("my-drawer-4");
+  console.log(toggler);
 
   // Sate for navIcon
   const [checked, setChecked] = useState(false);
@@ -84,18 +81,14 @@ function App() {
   );
 
   return (
-    <div>
+    <div className="">
       <projectProDetailContext.Provider
         value={[ProjectProDetail, setProjectForDetail]}
       >
         <hireMeInfoContext.Provider value={[hireMeInfo, setHireMeInfo]}>
           {/* NavButton */}
-          <div className="absolute top-3 right-3 z-20 bg-base-100 navIcon lg:hidden">
-            <label
-              onClick={() => setChecked(!checked)}
-              htmlFor="my-drawer-4"
-              className="navBtn "
-            >
+          <div className="absolute top-3 right-3 md:right-7 bg-base-100 z-20 navIcon">
+            <label htmlFor="my-drawer-4" className="navBtn">
               {checked ? (
                 <FontAwesomeIcon
                   style={{ width: "23px", height: "23px" }}
@@ -110,8 +103,13 @@ function App() {
             </label>
           </div>
 
-          <div className="drawer drawer-mobile">
-            <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
+          <div className="drawer drawer-end">
+            <input
+              onChange={() => console.log(setChecked(!checked))}
+              id="my-drawer-4"
+              type="checkbox"
+              className="drawer-toggle"
+            />
             <div className="drawer-content">
               {/* <!-- Page content here --> */}
               <div className="scrollable">
@@ -122,12 +120,12 @@ function App() {
                 <Blogs></Blogs>
               </div>
             </div>
-            <div className="drawer-side z-10">
+            <div className="drawer-side overflow-x-hidden">
               <label htmlFor="my-drawer-4" className="drawer-overlay"></label>
-              <ul className="menu md:w-[120px] w-100 bg-base-100 justify-center text-base-content">
+              <div className="sideContent menu md:w-[120px] w-100 bg-base-100 justify-center text-base-content">
                 {/* <!-- Sidebar content here --> */}
                 {menuItems}
-              </ul>
+              </div>
             </div>
           </div>
         </hireMeInfoContext.Provider>
