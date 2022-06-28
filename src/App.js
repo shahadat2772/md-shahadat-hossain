@@ -119,8 +119,8 @@ function App() {
               <div className="scrollable">
                 {/* <Home></Home> */}
                 {/* <Projects></Projects> */}
-                <AboutMe></AboutMe>
-                {/* <ContactMe></ContactMe> */}
+                {/* <AboutMe></AboutMe> */}
+                <ContactMe></ContactMe>
                 {/* <Blogs></Blogs> */}
               </div>
             </div>

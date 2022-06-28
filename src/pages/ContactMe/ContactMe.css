@@ -1,0 +1,104 @@
+.contactInfo {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.contactMeInfo {
+  width: 450px;
+}
+
+.contactMeFrom {
+  width: 400px;
+}
+
+.contactMeHeader {
+  font-size: 44px;
+  line-height: 100%;
+}
+
+.addressInfo {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.subContactInfo {
+  padding: 8px 0px;
+  font-size: 18px;
+  color: #aa92f7e1;
+}
+.subContactInfo:hover {
+  color: #a991f7;
+  /* color: #a991f7c7; */
+}
+
+.formHeader {
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 950px) {
+  .contactMeInfo {
+    width: 350px;
+  }
+
+  .contactMeFrom {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contactMeInfo {
+    width: 300px;
+  }
+
+  .contactMeFrom {
+    width: 300px;
+  }
+
+  .formHeader {
+    font-size: 18px;
+    /* padding-bottom: 30px; */
+  }
+  .contactMeHeader {
+    font-size: 35px;
+    line-height: 100%;
+  }
+  .contactInfo {
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contactMeInfo {
+    width: 300px;
+  }
+
+  .contactMeFrom {
+    width: 300px;
+  }
+
+  .formHeader {
+    font-size: 20px;
+    /* padding-bottom: 30px; */
+  }
+  .contactMeHeader {
+    font-size: 35px;
+    line-height: 100%;
+  }
+  .contactInfo {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+}
+
+/* .contactInfoContainer {
+  height: 85vh;
+  width: 100vw;
+  overflow-y: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+} */
