@@ -94,12 +94,12 @@ function App() {
             <label htmlFor="my-drawer-4" className="navBtn">
               {checked ? (
                 <FontAwesomeIcon
-                  style={{ width: "23px", height: "23px" }}
+                  style={{ width: "23px", height: "23px", color: "#909096" }}
                   icon={faBarsStaggered}
                 ></FontAwesomeIcon>
               ) : (
                 <FontAwesomeIcon
-                  style={{ width: "23px", height: "23px" }}
+                  style={{ width: "23px", height: "23px", color: "#909096" }}
                   icon={faBars}
                 ></FontAwesomeIcon>
               )}

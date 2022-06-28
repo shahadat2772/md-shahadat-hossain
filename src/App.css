@@ -10,11 +10,6 @@
   background-color: #1d1d1d;
 }
 
-/* .menu a {
-  justify-content: center;
-  color: #909096;
-} */
-
 /* SideBar Content (Menu items) */
 .sideContent {
   display: flex;
@@ -36,6 +31,7 @@
 
 .menuItems li {
   margin: 16px 0px;
+  color: #909096;
 }
 
 .menuItems li:hover {

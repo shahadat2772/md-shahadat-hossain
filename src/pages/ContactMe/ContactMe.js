@@ -31,11 +31,11 @@ const ContactMe = () => {
   return (
     <section
       id="contact"
-      className="section section h-[100vh] flex justify-center items-center"
+      className="section section h-[100vh] relative flex justify-center items-center"
     >
-      {/* <h2 className="md:text-3xl text-2xl pt-1 pl-1">
+      <h2 className="absolute top-5 left-4 md:text-3xl text-2xl">
         <span className="text-primary">CONTACT</span> ME
-      </h2> */}
+      </h2>
 
       <form
         ref={form}
