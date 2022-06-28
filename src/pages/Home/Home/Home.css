@@ -1,0 +1,105 @@
+.heroContainer {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 1140px) {
+  /* .heroContainer {
+  } */
+
+  .bannerText {
+    font-size: 60px;
+    line-height: 115%;
+  }
+  .bannerImage {
+    width: 450px;
+  }
+  .heroContainer {
+    gap: 50px;
+  }
+}
+
+/* flex-direction: row-reverse; */
+
+@media screen and (max-width: 950px) {
+  /* .heroContainer {
+    } */
+  .bannerButton {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+
+  .bannerText {
+    font-size: 45px;
+    line-height: 100%;
+  }
+  .bannerImage {
+    width: 350px;
+  }
+  .heroContainer {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* .heroContainer {
+      } */
+  .bannerButton {
+    font-size: 12px;
+    margin-top: 30px;
+    height: 30px;
+  }
+
+  .bannerText {
+    font-size: 35px;
+    line-height: 105%;
+  }
+  .bannerImage {
+    width: 280px;
+  }
+  .heroContainer {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* .heroContainer {
+        } */
+  .bannerButton {
+    font-size: 12px;
+    margin-top: 30px;
+    height: 30px;
+  }
+
+  .bannerText {
+    font-size: 30px;
+    line-height: 105%;
+  }
+  .bannerImage {
+    width: 250px;
+  }
+  .heroContainer {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  /* .heroContainer {
+          } */
+  .bannerButton {
+    font-size: 15px;
+    margin-top: 30px;
+    height: 30px;
+  }
+
+  .bannerText {
+    font-size: 45px;
+    line-height: 107%;
+  }
+  .bannerImage {
+    width: 330px;
+  }
+  .heroContainer {
+    gap: 18px;
+    flex-direction: column;
+  }
+}

@@ -118,10 +118,10 @@ function App() {
               {/*  Page content here  */}
               <div className="scrollable">
                 <Home></Home>
-                <Projects></Projects>
+                {/* <Projects></Projects>
                 <AboutMe></AboutMe>
                 <ContactMe></ContactMe>
-                <Blogs></Blogs>
+                <Blogs></Blogs> */}
               </div>
             </div>
             <div className="drawer-side overflow-x-hidden">
