@@ -1,21 +1,21 @@
 import React from "react";
-import Banner from "../Banner/Banner";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import laptop from "../../../assets/images/laptop44.png";
+import "./Home.css";
 const Home = () => {
   return (
     <div id="home" className="section hero min-h-screen">
       <div className="hero-content md:gap-6 flex-col p-0 lg:flex-row-reverse">
-        <img alt="" src={laptop} className="md:max-w-[500px]" />
+        <img alt="" src={laptop} className="md:max-w-[500px] max-w-[320px]" />
         <div className="max-w-[600px]">
-          <h1 className="md:text-[85px] text-[45px] md:leading-[85px] leading-[53px] bannerTexts">
+          <h1 className="md:text-[85px] text-[46px] md:leading-[85px] leading-[53px] bannerTexts">
             Hello,
           </h1>
-          <h1 className="md:text-[85px] text-[45px] md:leading-[85px] leading-[53px] bannerTexts">
+          <h1 className="md:text-[85px] text-[46px] md:leading-[85px] leading-[53px] bannerTexts">
             <span className="text-primary">I'm</span> Shahadat,
           </h1>
-          <h1 className="md:text-[85px] text-[45px] md:leading-[85px] leading-[53px] bannerTexts">
+          <h1 className="md:text-[85px] text-[46px] md:leading-[85px] leading-[53px] bannerTexts">
             Web Developer.
           </h1>
           {/* <div
