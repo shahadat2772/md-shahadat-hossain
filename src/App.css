@@ -5,20 +5,45 @@
   overflow-y: scroll;
 }
 
-/* @media screen and (max-width: 576px) {
-  .scrollable {
-    width: 100vw;
-  }
-} */
-
 .navIcon {
   border-radius: 7px;
   background-color: #1d1d1d;
 }
 
-.menu a {
+/* .menu a {
   justify-content: center;
   color: #909096;
+} */
+
+/* SideBar Content (Menu items) */
+.sideContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+@media screen and (max-width: 576px) {
+  .sideContent {
+    width: 120px;
+  }
+}
+
+.menuItems {
+  list-style: none;
+  text-align: center;
+}
+
+.menuItems li {
+  margin: 16px 0px;
+}
+
+.menuItems li:hover {
+  color: #a991f7;
+}
+
+.activeItem {
+  color: #a991f7;
 }
 
 /* Button Style form tailwind */

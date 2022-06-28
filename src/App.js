@@ -18,15 +18,18 @@ function App() {
   const [ProjectProDetail, setProjectForDetail] = useState(null);
   const [hireMeInfo, setHireMeInfo] = useState(null);
 
-  const toggler = document.getElementById("my-drawer-4");
-  console.log(toggler);
-
-  // Sate for navIcon
+  // State for navIcon
   const [checked, setChecked] = useState(false);
 
+  // JS For active navigation on scroll
+  {
+    const sections = document.querySelectorAll("section");
+    console.log(sections);
+  }
+
   const menuItems = (
-    <>
-      <li className="font-medium">
+    <div className="menuItems">
+      <li className="font-medium menuItem">
         <a
           onClick={() => {
             document.getElementById("my-drawer-4").click();
@@ -36,8 +39,7 @@ function App() {
           Home
         </a>
       </li>
-      <li className="font-medium">
-        {/* <a href={"/#projects"}>Projects</a> */}
+      <li className="font-medium menuItem">
         <a
           onClick={() => {
             document.getElementById("my-drawer-4").click();
@@ -47,7 +49,7 @@ function App() {
           Projects
         </a>
       </li>
-      <li className="font-medium">
+      <li className="font-medium menuItem">
         <a
           onClick={() => {
             document.getElementById("my-drawer-4").click();
@@ -57,7 +59,7 @@ function App() {
           About
         </a>
       </li>
-      <li className="font-medium">
+      <li className="font-medium menuItem">
         <a
           onClick={() => {
             document.getElementById("my-drawer-4").click();
@@ -77,7 +79,7 @@ function App() {
           Blogs
         </a>
       </li>
-    </>
+    </div>
   );
 
   return (
@@ -88,6 +90,7 @@ function App() {
         <hireMeInfoContext.Provider value={[hireMeInfo, setHireMeInfo]}>
           {/* NavButton */}
           <div className="absolute top-3 right-3 md:right-7 bg-base-100 z-20 navIcon">
+            {/* NavButton Icon */}
             <label htmlFor="my-drawer-4" className="navBtn">
               {checked ? (
                 <FontAwesomeIcon
@@ -103,15 +106,16 @@ function App() {
             </label>
           </div>
 
+          {/* Drawer */}
           <div className="drawer drawer-end">
             <input
-              onChange={() => console.log(setChecked(!checked))}
+              onChange={() => setChecked(!checked)}
               id="my-drawer-4"
               type="checkbox"
               className="drawer-toggle"
             />
             <div className="drawer-content">
-              {/* <!-- Page content here --> */}
+              {/*  Page content here  */}
               <div className="scrollable">
                 <Home></Home>
                 <Projects></Projects>
@@ -122,8 +126,8 @@ function App() {
             </div>
             <div className="drawer-side overflow-x-hidden">
               <label htmlFor="my-drawer-4" className="drawer-overlay"></label>
-              <div className="sideContent menu md:w-[120px] w-100 bg-base-100 justify-center text-base-content">
-                {/* <!-- Sidebar content here --> */}
+              <div className="sideContent bg-base-100 text-base-content">
+                {/* Sidebar content here */}
                 {menuItems}
               </div>
             </div>
