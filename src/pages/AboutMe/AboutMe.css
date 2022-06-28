@@ -1,0 +1,57 @@
+.heroContainer {
+  flex-direction: row-reverse;
+}
+
+.aboutMeImage {
+  width: 260px;
+}
+
+@media screen and (max-width: 850px) {
+  .aboutMeImage {
+    width: 230px;
+  }
+  .aboutMeTexts {
+    width: 320px;
+  }
+  .heroContainer {
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .aboutMeImage {
+    width: 200px;
+  }
+  .aboutMeTexts {
+    width: 320px;
+  }
+  .heroContainer {
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutMeImage {
+    width: 190px;
+  }
+  .aboutMeTexts {
+    width: 400px;
+  }
+  .heroContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .aboutMeImage {
+    width: 170px;
+  }
+  .aboutMeTexts {
+    width: 320px;
+  }
+  .heroContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

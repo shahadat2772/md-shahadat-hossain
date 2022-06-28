@@ -21,7 +21,7 @@ const EachProject = ({ project }) => {
   } = project;
 
   return (
-    <div className="card rounded card-compact w-80 bg-base-100 shadow-2xl">
+    <div className="eachProject card rounded card-compact w-80 bg-base-100 shadow-2xl">
       <figure>
         <img src={images[0]} alt="Shoes" />
       </figure>

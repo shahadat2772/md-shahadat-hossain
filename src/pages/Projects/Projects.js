@@ -1,6 +1,7 @@
 import React from "react";
 import { useQuery } from "react-query";
 import EachProject from "./EachProject";
+import "./Project.css";
 
 const Projects = () => {
   const { data: projects, isLoading } = useQuery("projects", () =>

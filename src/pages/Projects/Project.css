@@ -1,0 +1,9 @@
+@media screen and (max-width: 1070px) {
+  .projects {
+    gap: 30px;
+  }
+
+  .eachProject {
+    width: 270px;
+  }
+}
