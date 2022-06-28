@@ -3,6 +3,11 @@
   height: 100vh;
   width: 100vw;
   overflow-y: scroll;
+  scroll-snap-type: both proximity;
+}
+
+.section {
+  scroll-snap-align: start;
 }
 
 .navIcon {
