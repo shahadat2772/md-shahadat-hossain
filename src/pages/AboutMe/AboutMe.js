@@ -6,24 +6,26 @@ const AboutMe = () => {
   const [hireMeInfo, setHireMeInfo] = useContext(hireMeInfoContext);
 
   return (
-    <div id="about" className="section about hero min-h-screen">
-      <div className="hero-content flex-col gap-x-12 lg:flex-row">
+    <div id="about" className="section relative about hero min-h-screen">
+      <h2 className="absolute top-5 left-4 md:text-3xl text-[20px]">
+        <span className="text-primary">ABOUT</span> ME
+      </h2>
+      <div className="hero-content flex-col gap-x-20 lg:flex-row">
         <img
           src={about}
-          className="md:max-w-[280px] max-w-[200px] rounded-lg"
+          className="md:max-w-[240px] max-w-[165px] rounded-lg"
           alt=""
         />
         <div className="md:max-w-[450px] max-w-[330px]">
-          <h1 className="md:text-2xl text-xl font-bold md:pb-1">About me</h1>
-          <h1 className="md:text-[45px] text-4xl font-bold">
+          <h1 className="md:text-[45px] text-[32px] font-bold">
             <span className="text-primary">I'm</span> Shahadat!
           </h1>
-          <p className="md:pt-4 pt-3 pb-0">
+          <p className="md:pt-4 pt-2 pb-1">
             I was always an enthusiast of technologies and curious about the new
             staff. I Finally started web development which I found super
             interesting.
           </p>
-          <p className="pb-3 md:pb-5">
+          <p className="pb-4 md:pb-7">
             I have worked with numerous technologies on multiple MERN Stack
             projects. Now I am on my way to evolving into a full-stack
             developer.

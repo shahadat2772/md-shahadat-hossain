@@ -33,7 +33,7 @@ const ContactMe = () => {
       id="contact"
       className="section section h-[100vh] relative flex justify-center items-center"
     >
-      <h2 className="absolute top-5 left-4 md:text-3xl text-2xl">
+      <h2 className="absolute top-5 left-4 md:text-3xl text-[20px]">
         <span className="text-primary">CONTACT</span> ME
       </h2>
 

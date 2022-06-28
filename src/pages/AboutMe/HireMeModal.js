@@ -13,7 +13,7 @@ const HireMeModal = ({ hireMeInfo }) => {
           >
             ✕
           </label>
-          <h3 className="font-bold text-lg">As simple as that!</h3>
+          <h3 className="font-bold text-lg">Let's build together!</h3>
           <p className="py-4">
             Phone: 01833778129
             <br />

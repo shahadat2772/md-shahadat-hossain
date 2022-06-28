@@ -13,11 +13,11 @@ const Projects = () => {
 
   return (
     <div id="projects" className="section relative h-screen hero">
-      <h2 className="absolute top-5 left-4 md:text-3xl text-2xl">
+      <h2 className="absolute top-5 left-4 md:text-3xl text-[20px]">
         <span className="text-primary">MY</span> PROJECTS
       </h2>
-      <div className="projectsContainer overflow-y-auto md:h-max h-[80vh] mx-auto">
-        <div className="projects gap-10 gap-x-12 justify-items-center grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1">
+      <div className="projectsContainer overflow-y-auto w-[100%] md:h-max h-[80vh] mx-auto">
+        <div className="projects w-max mx-auto gap-10 gap-x-12 justify-items-center grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1">
           {/* Each Projects */}
           {projects.map((project) => (
             <EachProject key={project._id} project={project}></EachProject>
