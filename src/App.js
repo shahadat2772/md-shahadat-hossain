@@ -69,7 +69,7 @@ function App() {
           Contact
         </a>
       </li>
-      <li className="font-medium">
+      {/* <li className="font-medium">
         <a
           onClick={() => {
             document.getElementById("my-drawer-4").click();
@@ -78,7 +78,7 @@ function App() {
         >
           Blogs
         </a>
-      </li>
+      </li> */}
     </div>
   );
 
@@ -105,7 +105,6 @@ function App() {
               )}
             </label>
           </div>
-
           {/* Drawer */}
           <div className="drawer drawer-end">
             <input
@@ -117,9 +116,9 @@ function App() {
             <div className="drawer-content">
               {/*  Page content here  */}
               <div className="scrollable">
-                {/* <Home></Home> */}
-                {/* <Projects></Projects> */}
-                {/* <AboutMe></AboutMe> */}
+                <Home></Home>
+                <Projects></Projects>
+                <AboutMe></AboutMe>
                 <ContactMe></ContactMe>
                 {/* <Blogs></Blogs> */}
               </div>

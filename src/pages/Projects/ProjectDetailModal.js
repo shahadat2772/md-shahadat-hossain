@@ -44,13 +44,13 @@ const ProjectDetailModal = ({ ProjectProDetail }) => {
           {/* Links */}
           <p className="pt-2">
             <FontAwesomeIcon className="text-[13px] px-2" icon={faLink} />
-            <a className="pr-4 text-primary" href={live}>
+            <a className="pr-4 text-primary" href={live} target="_blank">
               Live
             </a>
-            <a className="pr-4 text-primary" href={clientRepo}>
+            <a className="pr-4 text-primary" href={clientRepo} target="_blank">
               GitHub-Client
             </a>
-            <a className="pr-4 text-primary" href={serverRepo}>
+            <a className="pr-4 text-primary" href={serverRepo} target="_blank">
               GitHub-Server
             </a>
           </p>

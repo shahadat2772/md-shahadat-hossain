@@ -32,7 +32,7 @@ const ContactMe = () => {
   return (
     <section
       id="contact"
-      className="section  section h-[100vh] relative flex justify-center items-center"
+      className="section h-[100vh] relative flex justify-center items-center mt-16"
     >
       <h2 className="absolute top-5 left-4 md:text-3xl text-[20px]">
         <span className="text-primary">CONTACT</span> ME
@@ -43,21 +43,26 @@ const ContactMe = () => {
             <h1 className="contactMeHeader">Dhaka, Bangladesh</h1>
             <p className="addressInfo">Middle Badda, Dhaka-1212</p>
             <p className="subContactInfo">
-              <a href="tel:+8801833778129">+88 01833778129</a>
+              <a href="tel:+8801833778129" target="_blank">
+                +88 01833778129
+              </a>
             </p>
             <p className="subContactInfo">
-              <a href="https://github.com/shahadat2772">
+              <a href="https://github.com/shahadat2772" target="_blank">
                 GitHub/Shahadathossain
               </a>
             </p>
             <p className="subContactInfo">
-              <a href="https://www.linkedin.com/in/md-shahadat-hossain-62b60b241">
+              <a
+                href="https://www.linkedin.com/in/md-shahadat-hossain-62b60b241"
+                target="_blank"
+              >
                 LinkedIn/Shahadathossain
               </a>
             </p>
             <p className="subContactInfo">
-              <a href="mailto:mdshahadathossain4774@gmail.com">
-                mdshahadathossain4774@gmail.com
+              <a href="mailto:shahadat2772@gmail.com" target="_blank">
+                shahadat2772@gmail.com
               </a>
             </p>
             {/* mailto:web.fazlerabbi@gmail.com */}

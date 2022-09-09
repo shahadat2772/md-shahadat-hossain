@@ -1,15 +1,37 @@
 [
   {
     "_id": 1,
+    "name": "Shohoj Pay",
+    "brief": "A mern stack f-commerce team project.",
+    "bulletPoints": [
+      "Manages two types of users merchant and personal. Got add money, Send Money, Request Money, Save Money, Merchant Pay, ECheck, Get Paid, Merchant to Merchant, and Merchant to Personal services with detailed statements. Dashboards for both users got admin panel with overall transaction summary, admin, and user management. Interactive settings page to update personal info.",
+      "Implemented Add Money, Send Money, Request Money, Save Money..",
+      "Handled transaction statements on the backend.",
+      "Implemented live notification.",
+      "Completed the admin panel (admin_Id: admin@gmail.com, password: 123456)."
+    ],
+    "images": [
+      "https://i.ibb.co/PhT38Zm/shohoj1.jpg",
+      "https://i.ibb.co/qDjh2gv/shohoj3.jpg",
+      "https://i.ibb.co/ngjMP8j/shohoj4.jpg",
+      "https://i.ibb.co/Cn4ppKY/shohoj5.jpg",
+      "https://i.ibb.co/QH2G6Jh/shohoj6.jpg"
+    ],
+    "technologies": "React, Express, MongoDB, Firebase Authentication, JsonWebToken, Stripe, React Router, Tailwind, Daisy UI, Redux Toolkit, Socket.io, etc.",
+    "live": "https://shohoj-pay-app.web.app",
+    "clientRepo": "https://github.com/shahadat2772/shohoj-pay-client",
+    "serverRepo": "https://github.com/shahadat2772/shohoj-pay-server"
+  },
+  {
+    "_id": 2,
     "name": "Tooldo",
     "brief": "Tools manufacturer full-stack website.",
     "bulletPoints": [
-      "Interactive & functional dashboard panel.",
-      "Managed API for both admin and general user with JsonWebToken.",
-      "Admin role has extra power of adding & deleting products, orders, and role management.",
-      "Super easy to use and the UI is user friendly.",
-      "Got OUR TEAM and a INQUIRY section.",
-      "Inquiry message goes to DB and by clicking on each team member a user can view team member's detail info."
+      "Interactive & functional dashboard panel for both admin and general users.",
+      "Order placement, stripe payment, and order cancelation for general users.",
+      "Register, login, social login, email verification, password reset, update profile.",
+      "Interactive my profile page to update personal info.",
+      "Products, orders, and role management for admin (admin_Id: admin@admin.com, password: 123456)."
     ],
     "images": [
       "https://i.ibb.co/4894sK9/tooldo-6.jpg",
@@ -22,16 +44,15 @@
     "serverRepo": "https://github.com/shahadat2772/tooldo-server"
   },
   {
-    "_id": 2,
+    "_id": 3,
     "name": "Speedo",
     "brief": "Car stock manager website.",
     "bulletPoints": [
       "Consistent in look and feel, interactive, and mobile responsive.",
-      "Adding and managing stocks in speedo is snappy.",
-      "Find the latest added products in the New Arrival section.",
-      "Got a business summery section.",
-      "Easy to use and user friendly.",
-      "Got tabular form for showing manage inventories item and my inventories items."
+      "Add and manage stocks.",
+      "latest added stocks in the new arrival section.",
+      "Consistent design and mobile responsive.",
+      "Register, login, social login, email verification, password reset."
     ],
     "images": [
       "https://i.ibb.co/xFp130X/speedo-2.jpg",
@@ -44,7 +65,7 @@
     "serverRepo": "https://github.com/shahadat2772/speedo-server"
   },
   {
-    "_id": 3,
+    "_id": 4,
     "name": "DentAid",
     "brief": "Dental service provider website with firebase authentication",
     "bulletPoints": [
@@ -64,5 +85,26 @@
     "live": "https://dentaid-bc9ec.web.app/",
     "clientRepo": "https://github.com/shahadat2772/dent-aid",
     "serverRepo": "https://github.com/shahadat2772/dent-aid-server"
+  },
+  {
+    "_id": 5,
+    "name": "Task Manager",
+    "brief": "Interactive and consistent task manager MERN stack website. Super easy to use.",
+    "bulletPoints": [
+      "add a task with dead line.",
+      "Edit the task.",
+      "Set as complete.",
+      "Interactive and responsive UI."
+    ],
+    "images": [
+      "https://i.ibb.co/ZX3307q/task-manager-4.jpg",
+      "https://i.ibb.co/QrHCKb5/task-manager-1.jpg",
+      "https://i.ibb.co/qJ9cwjC/task-manager-2.jpg",
+      "https://i.ibb.co/SQSKDMZ/task-manager-3.jpg"
+    ],
+    "technologies": "React, Express, MongoDB, Firebase Authentication, React Router, React Bootstrap.",
+    "live": "https://taskmanager129.web.app",
+    "clientRepo": "https://github.com/shahadat2772/task-manager-client",
+    "serverRepo": "https://github.com/shahadat2772/task-manager-server"
   }
 ]
